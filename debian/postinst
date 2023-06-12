@@ -1,0 +1,5 @@
+#!/bin/sh
+udevadm control --reload-rules
+systemctl daemon-reload || true
+chmod 700 /usr/bin/usbKeyCreater
+exit 0

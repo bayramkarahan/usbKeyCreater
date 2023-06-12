@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Usb Key Login Application
+Name[tr]=Usb Anahtar Uygulaması
+Type=Application
+Comment=Login Manager Application
+Comment[tr]=Giriş Yönetimi Uygulaması
+Terminal=false
+Exec=sh -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY usbKeyCreater"
+Icon=/usr/share/usbKeyCreater/app.svg
+Categories=Qt;Utility;
+Keywords=usb;key;
+GenericName=usbKeyCreater
+GenericName[tr]=usbKeyCreater
+Name[tr_TR]=usbKeyCreater
