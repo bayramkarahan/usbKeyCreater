@@ -1,5 +1,8 @@
 #!/bin/sh
 udevadm control --reload-rules
 systemctl daemon-reload || true
+systemctl enable usb-mount.service || true
+systemctl start usb-mount.service || true
 chmod 700 /usr/bin/usbKeyCreater
+
 exit 0

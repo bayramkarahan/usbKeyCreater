@@ -44,8 +44,10 @@ MainWindow::MainWindow(QWidget *parent)
     refreshButton->setFixedSize(boy*18,boy*3.9);
 
     connect(refreshButton, &QPushButton::clicked, [=]() {
-        disk->clear();
-        disk->addItems(diskList());
+      //  disk->clear();
+       // disk->addItems(diskList());
+        QByteArray hashData = QCryptographicHash::hash("bayram", QCryptographicHash::Md5);
+qDebug() << hashData.toHex();
     });
     QLabel *baslik=new QLabel(widget);
     baslik->setText("  Disk Listesi");

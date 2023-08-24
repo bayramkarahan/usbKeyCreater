@@ -30,20 +30,24 @@ desktop_file.path = /usr/share/applications/
 icon.files = icons/app.svg
 icon.path = /usr/share/usbKeyCreater
 
-rule.files = 99-local.rules
-rule.path = /etc/udev/rules.d/
 
-mount.files = usb-mount.sh
-mount.path = /root/
-
-service.files = usb-mount@.service
+service.files = usb-mount.service
 service.path = /etc/systemd/system/
 
+autostartdesktop.files = setmountusbdisklink.desktop
+autostartdesktop.path = /etc/xdg/autostart/
 
-INSTALLS += target icon desktop_file rule mount service
-DISTFILES +=99-local.rules \
-            usb-mount.sh \
-            usb-mount@.service
+disklinkscript.files = setmountusbdisklink.sh
+disklinkscript.path = /usr/bin/
+
+udevusb.files = udev-mountslist
+udevusb.path = /usr/bin/
+
+INSTALLS += target icon desktop_file service autostartdesktop disklinkscript udevusb
+DISTFILES +=usb-mount.service\
+            setmountusbdisklink.desktop \
+            setmountusbdisklink.sh \
+            udev-mountslist
 
 RESOURCES += \
     icons.qrc

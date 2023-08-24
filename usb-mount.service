@@ -1,0 +1,10 @@
+[Unit]
+Description=Mount USB Drive
+
+[Service]
+Type=simple
+RemainAfterExit=true
+ExecStart=/usr/bin/udev-mountslist
+
+[Install]
+WantedBy=multi-user.target
