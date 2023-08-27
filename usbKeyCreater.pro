@@ -28,7 +28,10 @@ desktop_file.files = usbKeyCreater.desktop
 desktop_file.path = /usr/share/applications/
 
 icon.files = icons/app.svg
-icon.path = /usr/share/usbKeyCreater
+icon.path = /usr/share/usbKeyCreater/
+
+command.files = command.conf
+command.path = /usr/share/usbKeyCreater/
 
 
 service.files = usb-mount.service
@@ -43,11 +46,12 @@ disklinkscript.path = /usr/bin/
 udevusb.files = udev-mountslist
 udevusb.path = /usr/bin/
 
-INSTALLS += target icon desktop_file service autostartdesktop disklinkscript udevusb
+INSTALLS += target icon desktop_file service autostartdesktop disklinkscript udevusb command
 DISTFILES +=usb-mount.service\
             setmountusbdisklink.desktop \
             setmountusbdisklink.sh \
-            udev-mountslist
+            udev-mountslist \
+            command.conf
 
 RESOURCES += \
     icons.qrc
