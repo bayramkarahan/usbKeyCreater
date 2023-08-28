@@ -4,5 +4,6 @@ systemctl daemon-reload || true
 systemctl enable usb-mount.service || true
 systemctl start usb-mount.service || true
 chmod 700 /usr/bin/usbKeyCreater
-
+chmod g+w /usr/share/usbKeyCreater/command.conf
+chgrp sudo /usr/share/usbKeyCreater/command.conf
 exit 0
