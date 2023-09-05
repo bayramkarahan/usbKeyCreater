@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 
 {
-    /***********************************************************/
+       /***********************************************************/
      QRect screenGeometry = QApplication::desktop()->screenGeometry();
       boy=screenGeometry.height()/100;
 

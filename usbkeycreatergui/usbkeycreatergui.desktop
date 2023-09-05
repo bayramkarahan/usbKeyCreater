@@ -6,10 +6,9 @@ Type=Application
 Comment=Login Manager Application
 Comment[tr]=Giriş Yönetimi Uygulaması
 Terminal=false
-Exec=sh -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY usbKeyCreater"
-Icon=/usr/share/usbKeyCreater/app.svg
+Exec=sh -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY usbkeycreatergui"
+Icon=/usr/share/icons/usbkeycreater.svg
 Categories=Qt;Utility;
 Keywords=usb;key;
-GenericName=usbKeyCreater
-GenericName[tr]=usbKeyCreater
-Name[tr_TR]=usbKeyCreater
+Name[en_EN]=UsbKeyCreater
+Name[tr_TR]=UsbAnahtarOluşturma

@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>icons/app.svg</file>
+        <file>icons/usbkeycreater.svg</file>
     </qresource>
 </RCC>

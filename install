@@ -1,3 +1,0 @@
-/root/usb-mount.sh (+x verilmeli)
-/etc/systemd/system/usb-mount@.service
-/etc/udev/rules.d/99-local.rules

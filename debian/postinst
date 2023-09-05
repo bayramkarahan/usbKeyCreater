@@ -1,9 +1,9 @@
 #!/bin/sh
 udevadm control --reload-rules
 systemctl daemon-reload || true
-systemctl enable usb-mount.service || true
-systemctl start usb-mount.service || true
-chmod 700 /usr/bin/usbKeyCreater
-chmod g+w /usr/share/usbKeyCreater/command.conf
-chgrp sudo /usr/share/usbKeyCreater/command.conf
+systemctl enable udev-mountslist.service || true
+systemctl start udev-mountslist.service || true
+chmod 700 /usr/bin/usbkeycreater
+chmod g+w /usr/share/usbkeycreater/command.conf
+chgrp sudo /usr/share/usbkeycreater/command.conf
 exit 0
