@@ -1,5 +1,5 @@
 # usbkeycreater
-<img src="https://github.com/bayramkarahan/usbkeycreater/blob/master/icons/app.svg" width="100" height="100" />
+<img src="usbkeycreatergui/icons/usbkeycreater.svg" width="100" height="100" />
 Bu proje usb anahtar hazırlama ve açılmasını içeren bir projedir.
 
 **Kurulum:**
