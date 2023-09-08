@@ -29,19 +29,19 @@ Disk hazırlandı mesajını aldığınızda usb diskiniz hazırlanmıştır.
 
 5- Eğer disk çıkartıldığında başka bir farklı bir komut çalıştırmak isterseniz;
 
-/usr/share/usbKeyCreater/command.conf dosya içeriğini değiştirin.
+/usr/share/usbkeycreater/command.conf dosya içeriğini değiştirin.
 
 **Örnek 1(Oturum Kapatma varsayılan bu var):**
 
-sudo echo "loginctl terminate-seat seat0">/usr/share/usbKeyCreater/command.conf
+sudo echo "loginctl terminate-seat seat0">/usr/share/usbkeycreater/command.conf
 
 **Örnek 2(Sistemi Kapatma):**
 
-sudo echo "poweroff">/usr/share/usbKeyCreater/command.conf
+sudo echo "poweroff">/usr/share/usbkeycreater/command.conf
 
 **Örnek 3(Sistemi Yeniden Başlatma):**
 
-sudo echo "reboot">/usr/share/usbKeyCreater/command.conf
+sudo echo "reboot">/usr/share/usbkeycreater/command.conf
 
 Yukarıdaki örnekleri veya başka bir işi yapacak komutları çalıştırabilirsiniz. Kurulduğunda varsayılan olarak ilk örnek çalışacak şekilde ayarlanmıştır.
 Terminalde örneklerde gösterilen komut çalıştırılarak görev tanımlaması yapabilirsiniz.
